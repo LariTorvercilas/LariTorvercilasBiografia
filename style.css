@@ -1,0 +1,283 @@
+.logo{
+    /* No seu arquivo style.css */
+.minha-foto {
+    width: 30px;         /* Define a largura fixa */
+    height: auto;         /* Mantém a proporção para não distorcer */
+    border-radius: 10px;  /* Deixa as bordas arredondadas */
+    object-fit: cover;    /* Garante que a imagem preencha o espaço sem deformar */
+}
+    color:white;
+    font-size:28px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #7dd3fc;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#dbeafe,#bfdbfe,#eff6ff);
+    color:#0f172a;
+}
+
+/* MENU */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f4c81;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo i{
+    color:#7dd3fc;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#7dd3fc;
+}
+
+/* HERO */
+
+#hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 10%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#0f4c81;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-img img{
+    width:320px;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    transition:.5s;
+}
+
+.hero-img img:hover{
+    transform:scale(1.05);
+}
+
+.botao{
+    display:inline-block;
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* SEÇÕES */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    color:#0f4c81;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    line-height:1.9;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.habilidade,
+.projeto{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.habilidade:hover,
+.projeto:hover{
+    transform:translateY(-10px);
+}
+
+.habilidade i,
+.projeto i{
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.habilidade h3,
+.projeto h3{
+    margin-bottom:15px;
+}
+
+/* CURRÍCULO */
+
+#curriculo{
+    text-align:center;
+}
+
+/* FORMULÁRIO */
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-size:16px;
+}
+
+textarea{
+    height:170px;
+    resize:none;
+}
+
+button{
+    padding:16px;
+    border:none;
+    border-radius:40px;
+    background:#2563eb;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#0f4c81;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.hero-img{
+    margin-top:40px;
+}
+
+.hero-img img{
+    width:250px;
+}
+
+}
